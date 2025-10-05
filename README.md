@@ -46,9 +46,13 @@ A fun web-based guessing game where the **computer tries to guess the letter (A�
 -Think of a letter between A and Z.
 -Click Start – the computer makes its first guess.
 -Use the buttons:
+
 -Higher ⬆️ → Your letter comes after the guess alphabetically.
+
 -Lower ⬇️ → Your letter comes before the guess alphabetically.
+
 -Correct ✅ → The computer guessed it!
+
 -If feedback is inconsistent, the app will warn you to restart.
 
 ##Tech Stack
