@@ -1,9 +1,9 @@
-
 from flask import Flask, render_template, session, jsonify, request
 import string
+import os
 
 app = Flask(__name__)
-app.secret_key = "change-this-to-a-random-secret"
+app.secret_key = os.environ.get("SECRET_KEY", "fallback-secret")
 
 LETTERS = list(string.ascii_lowercase)  # ['a'..'z']
 
@@ -98,5 +98,5 @@ def respond():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
 
