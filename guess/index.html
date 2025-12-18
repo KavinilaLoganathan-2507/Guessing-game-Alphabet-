@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Guess-the-Letter (Binary Search)</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<main class="container">
+<header>
+<h1>Guess-the-Letter</h1>
+<p class="subtitle">Think of a letter (A–Z). I'll guess it — fast 🔍</p>
+</header>
+
+
+<section class="card">
+<div id="status" class="status">Press <strong>Start</strong> when ready.</div>
+
+
+<div id="guessBox" class="guess-box hidden">
+<div class="guess-label">My guess</div>
+<div id="guess" class="guess">—</div>
+</div>
+
+
+<div class="controls">
+<button id="startBtn" class="btn primary">Start</button>
+<button id="higherBtn" class="btn" disabled>Higher ⬆️</button>
+<button id="lowerBtn" class="btn" disabled>Lower ⬇️</button>
+<button id="correctBtn" class="btn" disabled>Correct ✅</button>
+<button id="restartBtn" class="btn ghost">Restart</button>
+</div>
+
+
+<div class="meta">
+<div>Range: <span id="range">—</span></div>
+<div>Guesses: <span id="guesses">0</span></div>
+</div>
+
+
+<ul id="history" class="history"></ul>
+</section>
+
+
+<footer>
+<small>Built with Flask • Binary Search • Friendly UI</small>
+</footer>
+</main>
+
+
+<script src="/static/script.js"></script>
+</body>
+</html>
